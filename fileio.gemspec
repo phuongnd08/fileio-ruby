@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Quickly upload to file.io}
   spec.description   = %q{Quickly upload to file.io}
-  spec.homepage      = "https://github.com/phuongnd08/fileio"
+  spec.homepage      = "https://github.com/phuongnd08/fileio-ruby"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
