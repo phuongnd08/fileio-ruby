@@ -1,9 +1,13 @@
 # Fileio
 
-Fileio come with GeoLite2-City.mmdb so that it will resolve
-either IPv4 or IPv6 to country and city without a need for a request.
+Fileio upload your file to file.io
 
-All you need is: `Fileio.resolve(ip)`
+All you need is: `Fileio.upload(path)`
+
+If you need to control when the file will expire:
+```
+Fileio.upload(path, expires: '3d')
+```
 
 ## Installation
 
@@ -20,23 +24,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install fileio
-
-## Usage
-
-Get all location data:
-    Fileio.resolve(ip)
-
-Get country data:
-
-    Fileio.resolve_country(ip)
-
-Get country code:
-
-    Fileio.resolve_country_code(ip)
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests.
 
 ## Contributing
 
