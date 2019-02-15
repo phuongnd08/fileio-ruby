@@ -19,6 +19,8 @@ module Fileio
       http.request(request)
     end
 
-    JSON.parse(response.body)
+    JSON.parse(response.body).tap do |result|
+      puts result["link"]
+    end
   end
 end
