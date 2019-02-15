@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://file.io/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - file.io
+      Content-Type:
+      - multipart/form-data
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Feb 2019 06:29:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '82'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      X-Ratelimit-Limit:
+      - '5'
+      X-Ratelimit-Remaining:
+      - '4'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Cache-Control,X-reqed-With,x-requested-with
+      Etag:
+      - W/"52-JLbd0Pjc7xCyO0ZE/FoZkdXhM1g"
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"key":"7Y9ivE","link":"https://file.io/7Y9ivE","expiry":"14
+        days"}'
+    http_version: 
+  recorded_at: Fri, 15 Feb 2019 06:29:16 GMT
+recorded_with: VCR 3.0.3
